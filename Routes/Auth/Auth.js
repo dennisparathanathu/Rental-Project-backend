@@ -52,7 +52,7 @@ router.post('/api/user-registration',(request,response) =>{
     });
 
 });
-router.post('/api/user-login',(reuest,response) =>{
+router.post('/api/user-login',(reqest,response) =>{
     const form = new Formidable.IncomingForm();
     form.parse(request,async(error,fields,files) =>{
         const {email,password} = fields;
